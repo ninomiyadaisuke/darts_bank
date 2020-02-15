@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Dartsbank</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <% flash.each do |key, value| %>
+      <div class="alert alert-<%= key %>"role="alert"><%= value %></div>
+    <% end %>
+    <nav class="navbar navbar-default navbar-fixed-top navbar-transparent">
+      <div class="container">
+
+        <% if logged_in? %>  
+          <%= link_to 'Dartsbank', user_path(current_user), class: 'navbar-brand'  %>
+ 
+        <% else %>
+          <%= link_to 'Dartsbank', root_path, class: 'navbar-brand' %>
+
+        <% end %>
+        <ul class="nav navbar-nav navbar-right">
+          <% if logged_in? %>  
+            <li class = user>
+              <%= User.find(session[:user_id]).name %>さん
+            </li>
+          <% end %>          
+
+          <% if logged_in? %>
+            <li>
+              <%= link_to "写真投稿",new_topic_path, class:'nav-btn' %>
+            </li>
+            <li>
+              <%= link_to "ショップ検索", search_shops_path %>
+            </li>               
+            <li>
+              <%= link_to "ログアウト", logout_path, method: :delete %>
+            </li>
+          <% else %>
+            <li>
+              <%= link_to "ショップ検索", nonusershops_nonuser_search_path %>
+            </li>          
+            <li>
+              <%= link_to "サインアップ",new_user_path %>
+            </li>
+            <li>
+            <li>
+              <%= link_to "ログイン",login_path %>
+            </li>
+            </li>
+          <% end %>
+        </ul>
+      </div>
+    </nav>
+
+    <%= yield %>
+    
+    <footer class="footer">
+     <div class="container">
+     <div class="sticky-bottom ">
+        <div class="text-footer">
+          <p>Dartsbank</p>
+        </div>    
+      </div>
+    </div>
+    </footer>        
+    <script>
+      $(function(){
+        $(".alert").fadeOut(5000);
+      });
+    </script>
+  </body>
+</html>

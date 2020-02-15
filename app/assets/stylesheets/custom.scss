@@ -1,0 +1,443 @@
+h1, h2 {
+  font-weight: 100;
+}
+
+.text-white {
+  color: #fff;
+}
+
+.btn-white {
+  color: #fff;
+  border: 1px solid #fff;
+  padding: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+ 
+  &:hover {
+    color: #fff;
+  }
+}
+
+.top-hero-wrapper {
+  width: 100vw;
+  height: 100vh;
+  background-image: url('dartsbank_top.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: #464646;
+}
+
+.top-hero-container {
+  padding-top: 220px;
+  h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+  }
+
+  h2 {
+    margin-bottom: 60px;
+  }
+}
+
+.form-control {
+  height: 45px;
+}
+
+
+/*shop登録*/
+.shop-new-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+ 
+  // background-color: #464646;
+
+  .users-new-container {
+    padding-top: 100px;
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+}
+/*shop登録*/
+
+/*user登録画面*/
+.users-new-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  .users-new-container {
+    padding-top: 100px;
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+}
+/*user登録画面*/
+
+/*staff登録・編集画面*/
+.staffs-new-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  .users-new-container {
+    padding-top: 100px;
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+}
+/*staff登録・編集画面*/
+
+/*ログイン画面*/
+.session-new-wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  .users-new-container {
+    padding-top: 220px;
+    .form-group {
+      margin-bottom: 20px;
+    }
+  }
+}
+/*ログイン画面*/
+
+
+.alert {
+  margin-bottom: 0px;
+  position: fixed;
+  width: 100%;
+  z-index: 10000;
+}
+
+.navbar-transparent {
+  margin-bottom: 0px;
+  background-color: rgba(0,0,0,0.5);
+  a {
+    color: #fff !important;
+  }
+
+  .navbar-brand {
+    padding: 0px;
+    margin-top: 15px;
+  }
+
+  img {
+    height: 40px;
+  }
+}
+
+.user-hero-wrapper {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  margin-bottom: 60px;
+}
+
+.btn-black {
+  color: #565656;
+  border: 1px solid #565656;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+
+  &:hover {
+    color: #565656;
+  }
+}
+
+.topic-new-wrapper {
+  padding-top: 120px;
+}
+
+/*写真投稿*/
+.topic-index-wrapper {
+  padding-top: 70px;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+        padding: 8px 19px;
+    margin: 2em 0;
+    color: #2c2c2f;
+   
+    border-top: solid 5px #5989cf;
+    border-bottom: solid 5px #5989cf;
+    
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+/*写真投稿*/
+
+/*staffページ*/
+.staff-index-wrapper {
+  padding-top: 70px;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+/*staffページ*/
+
+/*shopページ*/
+.shop-index-wrapper {
+  padding-top: 70px;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+    margin-bottom: 60px;
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+/*shopページ*/
+
+.non-staffs-index-wrapper {
+  padding-top: 70px;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+
+
+.non-user-shops-index-wrapper {
+  padding-top: 70px;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+
+
+/*スタッフ紹介ログイン用*/
+.staffs-index-wrapper {
+  padding-top: 70px;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+   
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }
+}
+/*スタッフ紹介ログイン用*/
+
+/*staff 新規登録ボタン*/
+.staff-btn {
+    margin-bottom: 240px;
+    margin-top: 100px;
+}
+/*staff 新規登録ボタン*/
+
+
+/*スタッフ紹介非ログイン用*/
+.non-user-shops-index-wrapper {
+  padding-top: 70px;
+  .topic-index-single {
+    background-color: #fff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 30px;
+    border: 1px solid #e6ecf0;
+    border-radius: 3px;
+    margin-bottom: 60px;
+   
+    .topic-text {
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+
+    img {
+      margin-top: 10px;
+      margin-bottom: 20px;
+      width: 100%;
+    }
+  }  
+}
+/*スタッフ紹介非ログイン用*/
+
+
+.btn-black {
+  color: black;
+  border: 1px solid black;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 20px;
+  background-color: rgba(0,0,0,0.0);
+
+  &:hover {
+    color: black;
+  }
+}
+
+.navbar-right {
+  color: white;
+  
+}
+
+.shop_search_form {
+  padding-top: 300px;
+}
+
+.warning {
+  font-size: 34px;
+}
+
+/*フッター*/
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px;
+  background-color: rgba(0,0,0,0.5);
+ 
+}
+
+.text-footer {
+  text-align:center; 
+  margin-top: 15px;
+  color: white;
+}
+
+/*フッター*/
+ 
+ 
+.user {
+  padding-top : 14px;
+}
+
+
+
+.text {
+  margin-left: 18px;
+}
+
+/*編集・削除ボタン*/
+.btn-flat-border {
+  display: inline-block;
+  padding: 0.3em 1em;
+  text-decoration: none;
+  color: #67c5ff;
+  border: solid 2px #e6ecf0;
+  border-radius: 3px;
+  transition: .4s;
+}
+
+.btn-flat-border:hover {
+  background: #67c5ff;
+  color: white;
+}
+
+/*編集・削除ボタン*/
+
+
+.a {
+  margin-bottom: 50px;
+}
+
+.pagination {
+  margin-bottom:60px;
+}

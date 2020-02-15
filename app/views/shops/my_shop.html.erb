@@ -1,0 +1,43 @@
+<div class="shop-index-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-md-offset-3">
+        <% if @shop.nil?%>
+          <p class="warning">まだショップが登録されてません<br>ショップの新規登録をお願いします</p>
+            <%=link_to "新規登録", new_shop_path, class: 'btn btn-block btn-black'%>
+        <% else %>
+         <div class="topic-index-single">
+           <p class="topic-text">
+              <%= image_tag @shop.image.url %>
+            </p>                
+            <h4 class='text'>ショップ名</h4>
+            <p class="topic-text">
+              <%= @shop.shop_name %>
+            </p>
+            <h4 class='text'>郵便番号</h4>
+            <p class="topic-text">
+               <%= @shop.postal %>
+            </p>
+            <h4 class='text'>住所</h4>
+            <p class="topic-text">
+              <%= @shop.prefecture_name %>
+            </p>
+            <p class="topic-text">
+              <%= @shop.address %>
+            </p>
+            <h4 class='text'>お店紹介文</h4>
+            <p class="topic-text">
+              <%= @shop.description %>
+            </p>             
+            <p class='text'>
+              <% if user_check %>
+                <%= link_to '編集', edit_shop_path(@shop.id), class: "btn-flat-border"%>
+                <%= link_to '削除', shop_path(@shop.id), method: :delete, class: "btn-flat-border" %>
+              <% end %>
+            </p>            
+          </div> 
+        <% end %>
+      </div>  
+    </div>  
+  </div>  
+</div>

@@ -1,0 +1,38 @@
+<div class="shop-new-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-offset-4 col-md-4 users-new-container">
+          <h1 class="text-center">編集</h1>
+          <%= form_for @shop do |f| %>
+            <div class="form-group">
+              <%= f.label :image %>
+              <%= f.file_field :image%>
+            </div>
+            <div class="form-group">
+              <%= f.label :shop_name %>
+              <%= f.text_field :shop_name, placeholder: 'ショップ名15文字以内', class: 'form-control' %>
+            </div>
+            <div class="form-group">
+              <%= f.label :郵便番号 %>
+              <%= f.text_field :postal, placeholder: '郵便番号', class: 'form-control' %>
+            </div>
+            <div class="form-group">
+              <div class="field">
+                <%= f.label :都道府県名 %><br>
+                <%= f.select :prefecture_name, Shop.prefectures.keys, {prompt: '選択してください'} %>
+              </div>
+            </div>
+            <div class="form-group">
+              <%= f.label :以降の住所 %>
+              <%= f.text_field :address, placeholder: '都道府県以外の住所', class: 'form-control' %> 
+            </div> 
+            <div class="form-group">
+              <%= f.label :お店紹介文 %>
+              <%= f.text_area :description, placeholder: 'ショップの魅力を記入しましょう！120文字以内', class: 'form-control' %> 
+            </div>                      
+            <%= f.submit "登録",class: 'btn btn-block btn-black'  %>
+         <% end %>
+      </div>
+    </div>
+  </div>
+</div>
