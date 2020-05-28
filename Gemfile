@@ -77,5 +77,5 @@ gem "carrierwave"
 gem 'fullcalendar-rails'
 gem 'momentjs-rails'
 gem 'seed-fu'
-gem 'kaminari', '~> 0.17.0'
+gem 'kaminari', '~> 1.2.1'
 gem 'will_paginate'
